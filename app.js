@@ -13,16 +13,19 @@ try{
           videoElement.play();
      }
 
-     button.addEventListener("click", async function(){
-// disalbed button 
-button.disabled = true;
-// start picture in pictureElement 
-await videoElement.requestPictureInPicture();
-
-
-     });
+     
 }
 
 catch(err){
 console.error(err)
 }}
+
+button.addEventListener("click", async function(){
+     // disalbed button 
+     button.disabled = true;
+     // start picture in pictureElement 
+     await videoElement.requestPictureInPicture();
+     
+     
+          });
+          stream()
